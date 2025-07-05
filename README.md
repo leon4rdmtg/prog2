@@ -1,5 +1,5 @@
 # prog2 - dead - server
-richard iver hurtado 
-Jose Alejandro Zabala Romero
-Junior Pacajes Banegas
-lucas mateo diaz badani
+1.richard iver hurtado 
+2.Jose Alejandro Zabala Romero
+3.Junior Pacajes Banegas
+4.lucas mateo diaz badani
