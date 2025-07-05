@@ -2,3 +2,4 @@
 richard iver hurtado 
 Jose Alejandro Zabala Romero
 Junior Pacajes Banegas
+lucas mateo diaz badani
