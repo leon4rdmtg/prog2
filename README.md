@@ -4,4 +4,4 @@
 3.Junior Pacajes Banegas
 4.lucas mateo diaz badani
 5.leonaedo montenegro
-6.
+6.luis antonio moreno miranda
