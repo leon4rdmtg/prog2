@@ -1,5 +1,5 @@
 # Lista inicial de comidas favoritas
-comidas_favoritas = ['Pizza', 'Sushi', 'Tacos']
+comidas_favoritas = ['Pizza', 'hamburgueza', 'broaster']
 
 # Función para imprimir la lista
 def imprimir_lista(lista):
