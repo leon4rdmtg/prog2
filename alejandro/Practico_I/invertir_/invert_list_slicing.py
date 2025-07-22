@@ -15,4 +15,4 @@ assert invertir_lista(["a", "b", "c"]) == ["c", "b", "a"]
 assert invertir_lista([]) == []
 print("¡Pruebas con slicing pasaron! ")
 
-print ("fin del programa ---- Lucas Mateo Diaz Badani")
+print ("fin del programa ---- Jose Alejandro Zabala Romero")

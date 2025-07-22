@@ -21,4 +21,4 @@ assert encontrar_mayor([7, 7, 7, 7]) == 7
 assert encontrar_mayor([]) == None  # lista vacía
 assert encontrar_mayor([42]) == 42  # un solo elemento
 print("¡Pruebas para encontrar_mayor pasaron! ")
-print("Fin del programa--------------Leonardo Montenegro ")
+print("Fin del programa--------------Jose Alejandro Zabala Romero")

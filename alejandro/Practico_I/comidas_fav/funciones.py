@@ -17,4 +17,4 @@ def modificar_lista(lista):
   except ValueError:
       print(" Por favor, ingresa un número válido.")
 
-print ("Richard Hurtado - FIN DEL PROGRAMA")
+print ("Jose Alejandro Zabala Romero - FIN DEL PROGRAMA")

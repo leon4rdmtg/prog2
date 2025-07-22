@@ -56,4 +56,4 @@ while True:
             print("Resultado:", resultado)
         except Exception as e:
             print("⚠️ Error en tu instrucción:", e)
-print("fin del programa ---- Richard Hurtado")
+print("fin del programa ---- Jose Alejandro Zabala Romero")

@@ -20,5 +20,4 @@ promedio_esperado = suma_esperada / len(mis_notas)
 assert suma_total == suma_esperada, f" Error: la suma debería ser {suma_esperada}"
 assert promedio == promedio_esperado, f" Error: el promedio debería ser {promedio_esperado:.2f}"
 print("OK ¡Todo correcto! Las validaciones pasaron exitosamente.")
-
 print("--- Fin del programa --- Jose Alejandro Zabala Romero")

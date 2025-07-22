@@ -33,4 +33,4 @@ def menu():
         else:
             print(" Opción no válida. Intenta de nuevo.")
 menu()
-print ("Lucas Mateo Diaz Badani - FIN DEL PROGRAMA")
+print ("Jose Alejandro Zabala Romero - FIN DEL PROGRAMA")

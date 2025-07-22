@@ -17,4 +17,4 @@ mostrar_area_rectangulo(2, 7, 3)
 # Rectángulo 3 (usando la función) # Llamada a la función principal con los parámetros correspondientes
 mostrar_area_rectangulo(3, 15, 8)
 
-print("Fin del programa--------------Richard Hurtado ")
+print("Fin del programa--------------Jose Alejandro Zabala Romero ")
