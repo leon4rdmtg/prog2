@@ -20,7 +20,7 @@ def probar_suma_diagonal_secundaria():
   assert sumar_diagonal_secundaria(m2) == 6  # 1 + 2 + 3
   m3 = [[8]]
   assert sumar_diagonal_secundaria(m3) == 8  # Solo un elemento
-  print("¡Pruebas para sumar_diagonal_secundaria pasaron! ✅")
+  print("¡Pruebas para sumar_diagonal_secundaria pasaron! ")
 if __name__ == "__main__":
   probar_suma_diagonal_secundaria()
   print("\nFin del programa ----- Jose Alejandro Zabala Romero")

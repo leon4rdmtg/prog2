@@ -1,10 +1,4 @@
 def hay_camino(matriz):
-  """
-  Determina si existe un camino desde la esquina superior izquierda (0, 0)
-  hasta la esquina inferior derecha (N-1, N-1) en una matriz.
-  0 = camino libre, 1 = pared.
-  Usa búsqueda en profundidad (DFS).
-  """
   if not matriz or matriz[0][0] == 1:
       return False
   n = len(matriz)

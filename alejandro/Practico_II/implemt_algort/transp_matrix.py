@@ -1,38 +1,37 @@
 def transponer_matriz(matriz):
-  """
-  Esta función recibe una matriz (lista de listas) y devuelve su transpuesta.
-  """
-  f = len(matriz)              # Paso 1: filas
-  c = len(matriz[0]) if f > 0 else 0  # columnas
-
-  matriz_transpuesta = []     # Paso 2: nueva matriz vacía
-
-  for j in range(c):          # Paso 3: recorrer columnas de la original
-      nueva_fila = []         # Paso 4a: inicializar nueva fila
-      for i in range(f):      # Paso 4b: recorrer filas de la original
-          nueva_fila.append(matriz[i][j])  # Paso 4c: añadir elemento
-      matriz_transpuesta.append(nueva_fila)  # Paso 5: agregar nueva fila a transpuesta
-
-  return matriz_transpuesta   # Paso 6: devolver resultado final
-
-# Pruebas para verificar que la transposición funciona correctamente
-def probar_transposicion():
-  print("\nProbando transponer_matriz...")
-  # Caso 1: matriz 3x2
-  m1 = [[1, 2],
-        [3, 4],
-        [5, 6]]
-  t1 = [[1, 3, 5],
-        [2, 4, 6]]
-  assert transponer_matriz(m1) == t1
-  # Caso 2: matriz 2x2
-  m2 = [[7, 8],
-        [9, 10]]
-  t2 = [[7, 9],
-        [8, 10]]
-  assert transponer_matriz(m2) == t2
-  # Caso borde: matriz vacía
-  assert transponer_matriz([]) == []
-  print("¡Pruebas para transponer_matriz pasaron! ✅")
-# Llamamos a la función de prueba
-print("Fin del programa ------Jose Alejandro Zabala Romero")
+    if not matriz or not matriz[0]:
+        return []
+    num_filas = len(matriz)
+    num_columnas = len(matriz[0])
+    matriz_transpuesta = []
+    for j in range(num_columnas):  # Recorremos columnas de la original
+        nueva_fila = []
+        for i in range(num_filas):  # Recorremos filas de la original
+            nueva_fila.append(matriz[i][j])
+        matriz_transpuesta.append(nueva_fila)
+    return matriz_transpuesta
+# Prueba 1: Matriz 2x3
+m1 = [[1, 2, 3], [4, 5, 6]]
+t1 = transponer_matriz(m1)
+assert t1 == [[1, 4], [2, 5], [3, 6]]
+print("Prueba 1 (2x3) pasada!")
+# Prueba 2: Matriz cuadrada 2x2
+m2 = [[7, 8], [9, 10]]
+t2 = transponer_matriz(m2)
+assert t2 == [[7, 9], [8, 10]]
+print("Prueba 2 (2x2) pasada!")
+# Prueba 3: Matriz 3x1
+m3 = [[1], [2], [3]]
+t3 = transponer_matriz(m3)
+assert t3 == [[1, 2, 3]]
+print("Prueba 3 (3x1) pasada!")
+# Prueba 4: Matriz 1x3
+m4 = [[10, 20, 30]]
+t4 = transponer_matriz(m4)
+assert t4 == [[10], [20], [30]]
+print("Prueba 4 (1x3) pasada!")
+m5 = []
+t5 = transponer_matriz(m5)
+assert t5 == []
+print("Prueba 5 (matriz vacía) pasada!")
+print("Fin del programa ----- Jose Alejandro Zabala Romero")

@@ -1,4 +1,3 @@
-# ALGORITMO DE BURBUJA
 def ordenamiento_burbuja(lista):
     """
     Ordena una lista en orden ascendente utilizando el algoritmo de burbuja.

@@ -1,4 +1,3 @@
-# --- MATRIZ DE NÚMEROS ---
 # Definimos una matriz de 3 filas y 4 columnas
 matriz = [
     [10, 20, 30, 40],  # Fila 0
@@ -22,7 +21,6 @@ for fila_actual in matriz:
     for elemento in fila_actual:
         print(elemento, end=" ")
     print()  # Salto de línea entre filas
-
 # --- TABLERO DE TRES EN RAYA ---
 print("\n--- Tablero de Tres en Raya ---")
 tablero = [
@@ -34,5 +32,4 @@ for i, fila in enumerate(tablero):
     print(" | ".join(fila))
     if i < len(tablero) - 1:
         print("-" * 9)
-
 print("fin del programa Jose Alejandro Zabala Romero")

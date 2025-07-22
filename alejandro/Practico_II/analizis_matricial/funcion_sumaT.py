@@ -17,7 +17,7 @@ def probar_suma_total():
     assert sumar_total_matriz([]) == 0
     assert sumar_total_matriz([[42]]) == 42
     assert sumar_total_matriz([[], [1, 2, 3], []]) == 6
-    print("¡Pruebas para sumar_total_matriz pasaron! ✅")
+    print("¡Pruebas para sumar_total_matriz pasaron! ")
 if __name__ == "__main__":
     probar_suma_total()
     print("\nFin del programa Jose Alejandro Zabala Romero")

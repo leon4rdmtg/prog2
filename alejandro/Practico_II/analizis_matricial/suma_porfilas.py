@@ -12,7 +12,7 @@ def probar_suma_por_filas():
   m2 = [[10, 10], [20, 20], [30, 30]]
   assert sumar_por_filas(m2) == [20, 40, 60]
   assert sumar_por_filas([]) == []
-  print("¡Pruebas para sumar_por_filas pasaron! ✅")
+  print("¡Pruebas para sumar_por_filas pasaron! ")
 if __name__ == "__main__":
   probar_suma_por_filas()
   print("\nFin del programa ---- Jose Alejandro Zabala Romero")
