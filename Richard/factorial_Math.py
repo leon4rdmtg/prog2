@@ -20,3 +20,4 @@ try:
   mostrar_factorial(numero)
 except ValueError:
   print("❌ Entrada inválida. Por favor ingresa un número entero.")
+print("fin del programa richard hurtado")

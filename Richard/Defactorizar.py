@@ -11,3 +11,4 @@ mostrar_area_rectangulo(1, 10, 5)
 mostrar_area_rectangulo(2, 7, 3)
 
 mostrar_area_rectangulo(3, 15, 8)
+print("fin del programa richard hurtado")

@@ -16,4 +16,4 @@ assert contar_elemento(["sol", "luna", "estrella"], "marte") == 0
 assert contar_elemento([], 5) == 0
 assert contar_elemento([True, False, True, True], True) == 3
 
-print("¡Pruebas para contar_elemento pasaron! ")
+print("¡Pruebas para contar_elemento pasaron!-richard hurtado" ")

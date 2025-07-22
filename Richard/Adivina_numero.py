@@ -10,5 +10,5 @@ while True:
         print("Correcto! el número secreto es: ",numero_secreto)
         break  
 
-print("--- Fin del programa --- Antonio Moreno" )
+print("--- Fin del programa --- Richard Hurtado" )
 assert numero_secreto == 7

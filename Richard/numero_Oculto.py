@@ -30,3 +30,4 @@ while True:
           print(f"❌ {resultado}. Intenta de nuevo.")
   except ValueError:
       print("⚠️ Por favor, ingresa un número válido.")
+      print("--- Fin del programa --- richard hurtado")

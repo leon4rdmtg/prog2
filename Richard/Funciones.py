@@ -10,8 +10,8 @@ def sumar(a, b):
   """
   return a + b
 # ===== Pruebas unitarias con assert =====
-assert saludar("Jose") == "¡Hola, Jose! ¡Qué bueno tenerte aquí!", "Error en saludo para Jose"
-assert saludar("Alejandro") == "¡Hola, Alejandro! ¡Qué bueno tenerte aquí!", "Error en saludo para Alejandro"
+assert saludar("richard") == "¡Hola, richard! ¡Qué bueno tenerte aquí!", "Error en saludo para richard"
+assert saludar("iver") == "¡Hola, iver! ¡Qué bueno tenerte aquí!", "Error en saludo para iver"
 assert sumar(2, 3) == 5, "Error: 2 + 3 debe ser 5"
 assert sumar(-4, 4) == 0, "Error: -4 + 4 debe ser 0"
 print(" Todas las pruebas unitarias pasaron correctamente.\n")
@@ -19,3 +19,4 @@ print(" Todas las pruebas unitarias pasaron correctamente.\n")
 print(saludar("Jose"))
 print(f"La suma de 7 y 8 es: {sumar(7, 8)}")
 
+print("fin del programa richard hurtado")  

@@ -20,3 +20,4 @@ try:
     print(f"El factorial de {numero} es: {resultado}")
 except ValueError as e:
     print(e)
+print("fin del programa richard hurtado")

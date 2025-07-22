@@ -16,3 +16,4 @@ def modificar_lista(lista):
           print(" Índice fuera de rango.")
   except ValueError:
       print(" Por favor, ingresa un número válido.")
+      print("fin del programa richard hurtado")

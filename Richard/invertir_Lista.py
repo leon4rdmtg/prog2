@@ -22,3 +22,4 @@ assert invertir_lista(["a", "b", "c"]) == ["c", "b", "a"]
 assert invertir_lista([]) == []
 
 print("¡Pruebas para invertir_lista pasaron! ✅")
+print("fin del programa richard hurtado")

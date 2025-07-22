@@ -43,3 +43,4 @@ def menu():
 
 # Ejecutar el programa
 menu()
+print("--- Fin del programa --- richard hurtado")
