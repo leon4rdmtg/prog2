@@ -8,5 +8,5 @@ while True:
   else:
         print("¡Acertaste! el número secreto es: ", numero_secreto )
         break
-print("Fin del programa----Luis Antonio Moreno Miranda")
+print("Fin del programa----Jose Alejandro Zabala Romero")
 assert numero_secreto == 7

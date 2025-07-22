@@ -9,4 +9,4 @@ assert sumar_elementos([10, -2, 5]) == 13
 assert sumar_elementos([]) == 0  # ¡Importante probar con una lista vacía!
 assert sumar_elementos([100]) == 100
 print("¡Pruebas para sumar_elementos pasaron! ")
-print("--- Fin del programa --- Luis Antonio Moreno Miranda")
+print("--- Fin del programa --- Jose Alejandro Zabala Romero")

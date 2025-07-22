@@ -26,5 +26,5 @@ while True:
     continuar = input("¿Deseas verificar otra edad? (Y/N): ").strip().lower()
     if continuar != 'y':
         break
-print("--- Fin del programa --- Richard Hurtado")
+print("--- Fin del programa --- Jose Alejandro Zabala Romero")
 

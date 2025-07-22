@@ -42,4 +42,4 @@ while True:
     continuar = input("¿Deseas jugar otra ronda? (Y/N): ").strip().lower()
     if continuar != 'y':
         break
-print("--- Fin del programa --- Junior Pacajes Banegas")
+print("--- Fin del programa --- Jose Alejandro Zabala Romero")

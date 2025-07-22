@@ -15,4 +15,4 @@ try:
 except ValueError as e:
     print("Error:", e)
 
-print("Fin del programa----Nicodemus Berny Quiroga Gonzáles")
+print("Fin del programa----Jose Alejandro Zabala Romero")

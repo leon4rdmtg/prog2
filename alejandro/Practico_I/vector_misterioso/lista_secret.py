@@ -30,4 +30,4 @@ while True:
             print(" Error en tu instrucción:", e)
            
  
-print("fin del programa ---- Junior Pacajes Banegas")
+print("fin del programa ---- Jose Alejandro Zabala Romero")

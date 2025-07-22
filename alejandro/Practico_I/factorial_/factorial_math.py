@@ -20,4 +20,4 @@ except ValueError:
     print(" Entrada inválida. Por favor ingresa un número entero.")
 
 
-print("Fin del programa----Junior Pacajes Banegas")
+print("Fin del programa----Jose Alejandro Zabala Romero")

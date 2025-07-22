@@ -18,5 +18,4 @@ print(f"--- Tabla del {num_tabla} ---")
 tabla = tabla_multiplicar(num_tabla)
 for i, resultado in enumerate(tabla, start=1):
     print(f"{num_tabla} x {i} = {resultado}")
-
-print("Fin del programa--------------Junior Pacajes Banegas")
+print("Fin del programa--------------Jose Alejandro Zabala Romero")

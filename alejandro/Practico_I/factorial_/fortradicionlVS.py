@@ -8,4 +8,4 @@ print(cuadrados)  # [0, 1, 4, 9, 16]
 cuadrados = [x * x for x in range(5)]
 print(cuadrados)  # [0, 1, 4, 9, 16]
 
-print("Fin del programa--------------Leonardo Montenegro ")
+print("Fin del programa--------------Jose Alejandro Zabala Romero ")

@@ -18,4 +18,4 @@ print(" Todas las pruebas unitarias pasaron correctamente.\n")
 # ===== Llamadas a las funciones =====
 print(saludar("Jose"))
 print(f"La suma de 7 y 8 es: {sumar(7, 8)}")
-print("Fin del programa-------------- Richard Hurtado")
+print("Fin del programa-------------- Jose Alejandro Zabala Romero")

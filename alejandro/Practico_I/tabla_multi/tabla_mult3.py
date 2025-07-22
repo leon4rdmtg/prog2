@@ -12,4 +12,4 @@ print(f"--- Tabla del {num_tabla} ---")
 for i, resultado in enumerate(tabla_multiplicar(num_tabla), start=1):
   print(f"{num_tabla} x {i} = {resultado}")
 
-print("Fin del programa--------------Richard Hurtado")
+print("Fin del programa--------------Jose Alejandro Zabala Romero")
