@@ -18,5 +18,7 @@ print("\n=== Opción 2: Recorriendo por elementos (más Pythonico) ===")
 for fila_actual in matriz:  # Bucle exterior: cada fila completa
     for elemento in fila_actual:  # Bucle interior: cada número en esa fila
         print(elemento, end=' ')
-    print()  # Salto de línea después de imprimir una fila completa 
+    print()  # Salto de línea después de imprimir una fila completa
+
+ 
 
