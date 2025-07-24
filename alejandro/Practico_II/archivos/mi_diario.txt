@@ -1,0 +1,10 @@
+Querido diario,
+Hoy aprendí sobre archivos en Python.
+El modo 'w' borra todo antes de escribir. ¡Qué miedo!
+
+--- Entrada del 20 de Junio de 2025 ---
+El modo 'a' es genial para no perder datos.
+Ahora mi diario puede crecer cada día.
+
+--- Nueva entrada ---
+jum
