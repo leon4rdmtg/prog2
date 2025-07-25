@@ -15,4 +15,4 @@ for i in range(num_filas):
         sumas_por_columna[j] += matriz[i][j]
 # 4. Resultado final
 print("Suma por columnas:", sumas_por_columna)
-print("\nFin del programa ---- Jose Alejandro Zabala Romero")
+print("\nFin del programa ---- Leonardo Montenegro")

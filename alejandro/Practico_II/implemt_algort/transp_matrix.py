@@ -34,4 +34,4 @@ m5 = []
 t5 = transponer_matriz(m5)
 assert t5 == []
 print("Prueba 5 (matriz vacía) pasada!")
-print("Fin del programa ----- Jose Alejandro Zabala Romero")
+print("Fin del programa ----- leonardo montenegro")

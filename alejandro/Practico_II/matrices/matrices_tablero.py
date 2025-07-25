@@ -32,4 +32,4 @@ for i, fila in enumerate(tablero):
     print(" | ".join(fila))
     if i < len(tablero) - 1:
         print("-" * 9)
-print("fin del programa Jose Alejandro Zabala Romero")
+print("fin del programa -----Richard hurtado")

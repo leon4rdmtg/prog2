@@ -16,4 +16,4 @@ for fila in matriz:
     sumas_por_fila.append(acumulador_fila)
 # 5. Resultado final
 print("Suma por filas:", sumas_por_fila)
-print("\nFin del programa Jose Alejandro Zabala Romero")
+print("\nFin del programa ----- Leonardo Montenegro")

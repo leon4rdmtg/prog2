@@ -32,4 +32,4 @@ if __name__ == "__main__":
   libro1.disponible = False
   print("\nDespués de cambiar disponibilidad:")
   libro1.mostrar_info()
-  print ("fin del programa ----- jose alejandro zabala romero")
+  print ("fin del programa ----- Lucas Mateo Diaz Badano")

@@ -23,4 +23,4 @@ assert es_identidad(identidad) == True
 assert es_identidad(no_identidad) == False
 assert es_identidad(no_cuadrada) == False
 print("Todas las pruebas pasaron correctamente.")
-print("Fin del programa ----- jose alejandro zabala romero")
+print("Fin del programa ----- leonardo montenegro")

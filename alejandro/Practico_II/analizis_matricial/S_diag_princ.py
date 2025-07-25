@@ -15,4 +15,4 @@ def probar_suma_diagonal_principal():
   print("¡Pruebas para sumar_diagonal_principal pasaron! ")
 if __name__ == "__main__":
   probar_suma_diagonal_principal()
-  print("\nFin del programa ---- Jose Alejandro Zabala Romero")
+  print("\nFin del programa ---- Junior Pacajes Banegas")

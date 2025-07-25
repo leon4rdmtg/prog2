@@ -8,3 +8,4 @@ with open(nombre_archivo, 'w') as diario_file:
     diario_file.write("El modo 'w' borra todo antes de escribir. ¡Qué miedo!\n")
 # 4. Confirmamos que el archivo fue escrito
 print("Diario guardado correctamente en 'mi_diario.txt'")
+print ("fin del programa --- Richard hurtado")
