@@ -3,7 +3,6 @@ NUM_COLUMNAS = 7
 #  Crea la sala como matriz de asientos, cada uno con estado y precio
 def crear_sala(filas, columnas):
     return [[{"estado": "L", "precio": 50} for _ in range(columnas)] for _ in range(filas)]
-
 #  Muestra el estado visual de la sala con encabezado de columnas
 def mostrar_sala(sala):
     print("\n🎬 Estado actual de la sala:")
@@ -18,7 +17,6 @@ def mostrar_sala(sala):
             print(f"{simbolo:2}", end=" ")
         print()
     print("L = Libre, O = Ocupado")
-
 #  Ocupa un asiento individual e informa su precio (cambio nuevo)
 def ocupar_asiento(sala, fila, columna):
     try:
@@ -35,11 +33,9 @@ def ocupar_asiento(sala, fila, columna):
     except IndexError:
         print("❌ Asiento inválido. Verifique fila y columna.")
         return False
-
 #  Cuenta asientos libres en toda la sala
 def contar_asientos_libres(sala):
     return sum(asiento["estado"] == "L" for fila in sala for asiento in fila)
-
 #  Busca asientos contiguos (grupo en la misma fila)
 def buscar_asientos_juntos(sala, cantidad):
     for i, fila in enumerate(sala):
@@ -55,7 +51,6 @@ def buscar_asientos_juntos(sala, cantidad):
             else:
                 consecutivos = 0
     return None, None
-
 #  Reserva asientos contiguos y muestra el total (cambio nuevo)
 def ocupar_asientos_juntos(sala, fila, inicio_columna, cantidad):
     total = 0
@@ -64,7 +59,6 @@ def ocupar_asientos_juntos(sala, fila, inicio_columna, cantidad):
         total += sala[fila][j]["precio"]
     print(f"🎟️ {cantidad} asientos reservados en fila {fila + 1}, columnas {inicio_columna + 1} a {inicio_columna + cantidad}.")
     print(f"💰 Total a pagar: Bs {total}")  # NUEVO: suma de precios
-
 #  BUSQUEDA ALTERNATIVA: Agrupa bloques de asientos libres en varias filas
 def buscar_agrupaciones(sala, cantidad):
     agrupaciones = []  # Lista de tuplas (fila, inicio_columna, cantidad_en_bloque)
@@ -83,7 +77,6 @@ def buscar_agrupaciones(sala, cantidad):
             else:
                 j += 1
     return []
-
 #  FUNCION NUEVA: Ocupa asientos de varias filas si no hay contiguos
 def ocupar_agrupaciones(sala, agrupaciones, cantidad):
     asientos_reservados = 0
@@ -99,7 +92,6 @@ def ocupar_agrupaciones(sala, agrupaciones, cantidad):
                     print(f"💰 Total a pagar: Bs {total}")  # NUEVO: total para reserva separada
                     return
     print("⚠️ No se pudo reservar la cantidad solicitada.")
-
 #  Bucle principal del programa
 sala = crear_sala(NUM_FILAS, NUM_COLUMNAS)
 while True:
@@ -148,7 +140,6 @@ while True:
                         total_mostrado += largo
                         if total_mostrado >= cantidad:
                             break
-
                     confirmar = input("¿Desea reservarlos aunque estén separados? (s/n): ").lower()
                     if confirmar == "s":
                         ocupar_agrupaciones(sala, sugerencias, cantidad)  # NUEVO: activa reserva separada
@@ -158,11 +149,9 @@ while True:
                     print("😕 No hay suficientes asientos libres aunque estén separados.")
         except ValueError:
             print("⚠️ Entrada no válida. Debe ingresar un número.")
-
     elif opcion == "4":
         libres = contar_asientos_libres(sala)
         print(f"📊 Asientos disponibles: {libres}")
-
     elif opcion == "5":
         print("👋 Gracias por usar el sistema de reservas.")
         break

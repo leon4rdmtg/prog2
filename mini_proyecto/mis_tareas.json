@@ -1,0 +1,10 @@
+{
+    "tareas": [
+        {
+            "id": 2,
+            "texto": "terminar el proyecto",
+            "completada": false
+        }
+    ],
+    "proximo_id": 3
+}
