@@ -19,4 +19,4 @@ for fila_actual in matriz:      # Bucle exterior toma cada lista-fila
     for elemento in fila_actual:  # Bucle interior toma cada elemento de esa fila
         print(elemento, end=" ")  # "end=' '" para imprimir en la misma línea
     print()  # Un salto de línea después de cada fila para formatear
-print("\nFin del programa -------Jose Alejandro Zabala Romero")       
+print("\nFin del programa ------- richard hurtado")       

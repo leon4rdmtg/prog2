@@ -36,4 +36,3 @@ matriz3 = [
   [1, 1, 0]
 ]
 print(hay_camino(matriz3))  # True
-print( "Fin del programa --- Jose Alejandro Zabala Romero")

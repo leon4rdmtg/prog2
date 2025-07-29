@@ -1,0 +1,15 @@
+{
+    "tareas": [
+        {
+            "id": 1,
+            "texto": "estudiar para el examen de hoy ",
+            "completada": true
+        },
+        {
+            "id": 2,
+            "texto": "tener listo el proyecto final para el lunes",
+            "completada": false
+        }
+    ],
+    "proximo_id": 3
+}

@@ -76,4 +76,4 @@ while True:
         break
     else:
         print("⚠️ Opción inválida. Intente nuevamente.")
-print(" fin del programa ----- jose alejandro zabala romero")
+print(" fin del programa ----- leonardo montenegro")

@@ -23,4 +23,4 @@ def probar_suma_diagonal_secundaria():
     print("¡Pruebas para sumar_diagonal_secundaria pasaron! ")
 # Llamamos a la función de prueba
 probar_suma_diagonal_secundaria()
-print("Fin del programa --- Jose Alejandro Zabala Romero")
+print("Fin del programa --- Lucas Mateo Diaz Badano")

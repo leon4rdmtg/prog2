@@ -20,4 +20,4 @@ def probar_suma_total():
     print("¡Pruebas para sumar_total_matriz pasaron! ")
 if __name__ == "__main__":
     probar_suma_total()
-    print("\nFin del programa Jose Alejandro Zabala Romero")
+    print("\nFin del programa ---- Junior Pacajes Banegas")

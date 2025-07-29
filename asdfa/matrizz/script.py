@@ -20,3 +20,5 @@ for fila_actual in matriz:  # Bucle exterior: cada fila completa
         print(elemento, end=' ')
     print()  # Salto de línea después de imprimir una fila completa
 
+ 
+

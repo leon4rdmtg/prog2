@@ -29,4 +29,4 @@ else:
             diagonal_secundaria.append(matriz[i][N - 1 - i])
         print("Diagonal principal:", diagonal_principal)
         print("Diagonal secundaria:", diagonal_secundaria)
-print("\nFin del programa Jose Alejandro Zabala Romero")
+print("\nFin del programa ----- Richard Hurtado")

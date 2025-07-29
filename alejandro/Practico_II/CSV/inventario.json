@@ -1,0 +1,17 @@
+[
+    {
+        "producto": "Manzanas",
+        "precio": 0.5,
+        "stock": 100
+    },
+    {
+        "producto": "Bananas",
+        "precio": 0.3,
+        "stock": 80
+    },
+    {
+        "producto": "Naranjas",
+        "precio": 0.6,
+        "stock": 60
+    }
+]

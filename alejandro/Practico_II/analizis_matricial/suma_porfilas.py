@@ -15,4 +15,4 @@ def probar_suma_por_filas():
   print("¡Pruebas para sumar_por_filas pasaron! ")
 if __name__ == "__main__":
   probar_suma_por_filas()
-  print("\nFin del programa ---- Jose Alejandro Zabala Romero")
+  print("\nFin del programa ---- Junior Pacajes Banegas")

@@ -17,4 +17,4 @@ teclado[0][0] = 0
 print("\nMatriz modificada:")
 for fila in teclado:
     print(fila)
-print("\nFin del programa Jose Alejandro Zabala Romero")
+print("\nFin del programa ----- leonardo montenegro")
