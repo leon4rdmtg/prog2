@@ -1,16 +1,25 @@
-print("📚 Calculadora de Promedio de 5 Notas")
+class CarritoDeCompras:
+    def _init_(self):
+        self.productos = []
 
-n1 = float(input("Nota 1: "))
-n2 = float(input("Nota 2: "))
-n3 = float(input("Nota 3: "))
-n4 = float(input("Nota 4: "))
-n5 = float(input("Nota 5: "))
+    def agregar_producto(self, producto):
+        # producto es un diccionario con "nombre" y "precio"
+        self.productos.append(producto)
 
-promedio = (n1 + n2 + n3 + n4 + n5) / 5
+    def calcular_total(self):
+        total = 0
+        for p in self.productos:
+            total += p["precio"]
+        return total
 
-print(f"\n📊 Tu promedio es: {promedio:.2f}")
+    def mostrar_carrito(self):
+        print("Productos en el carrito:")
+        for p in self.productos:
+            print(f"- {p['nombre']} : ${p['precio']}")
+        print(f"Total a pagar: ${self.calcular_total():.2f}")
 
-if promedio >= 70:
-    print("🎉 ¡Felicidades! Vas bien.")
-else:
-    print("💪 Ánimo, a seguir esforzándote.")
+# Ejemplo de uso
+carrito = CarritoDeCompras()
+carrito.agregar_producto({"nombre": "Camisa", "precio": 20})
+carrito.agregar_producto({"nombre": "Pantalón", "precio": 35})
+carrito.mostrar_carrito()

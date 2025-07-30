@@ -1,16 +1,30 @@
-# 1. Crear sala llena de 'L'
+import json
+import os
+
+# --- Funciones de persistencia ---
+def guardar_datos(sala, precios, archivo="datos_cine.json"):
+    with open(archivo, "w") as f:
+        json.dump({"sala": sala, "precios": precios}, f)
+
+def cargar_datos(archivo="datos_cine.json"):
+    if os.path.exists(archivo):
+        with open(archivo, "r") as f:
+            datos = json.load(f)
+            return datos["sala"], datos["precios"]
+    else:
+        return crear_sala(5, 8), []
+
+# --- Funciones de cine ---
 def crear_sala(filas, columnas):
     return [['L' for _ in range(columnas)] for _ in range(filas)]
 
-# 2. Mostrar la sala visualmente
 def mostrar_sala(sala):
     print("\nSala de Cine:")
-    print("   " + " ".join([f"{i+1:2}" for i in range(len(sala[0]))]))
+    print("   " + " ".join([f"{i + 1:2}" for i in range(len(sala[0]))]))
     for idx, fila in enumerate(sala):
-        print(f"{idx+1:2} " + "  ".join(fila))
+        print(f"{idx + 1:2} " + "  ".join(fila))
     print()
 
-# 3. Ocupar asiento si está libre y las coordenadas son válidas
 def ocupar_asiento(sala, fila, columna):
     filas_totales = len(sala)
     columnas_totales = len(sala[0])
@@ -26,48 +40,74 @@ def ocupar_asiento(sala, fila, columna):
         print("❌ Coordenadas fuera del rango.")
         return False
 
-# 4. Contar cuántos asientos libres quedan
 def contar_asientos_libres(sala):
     return sum(fila.count('L') for fila in sala)
 
-# 5. Contar cuántos asientos ocupados hay
-def contar_asientos_ocupados(sala):
-    return sum(fila.count('O') for fila in sala)
+def reiniciar_sala(sala):
+    for i in range(len(sala)):
+        for j in range(len(sala[0])):
+            sala[i][j] = 'L'
 
-
-# PROGRAMA PRINCIPAL
+# --- Programa principal ---
 def main():
-    PRECIO_ENTRADA = 30  # Precio de cada entrada en Bs
-    sala = crear_sala(5, 8)  # 5 filas, 8 columnas
+    sala, precios_entradas = cargar_datos()
 
     while True:
         mostrar_sala(sala)
         print("🎫 MENÚ:")
-        print("1. Ocupar un asiento")
+        print("1. Ocupar varios asientos")
         print("2. Ver cuántos asientos libres quedan")
+        print("3. Reiniciar sala")
         print("0. Salir")
 
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
             try:
-                fila = int(input("Ingrese la fila (1-5): ")) - 1
-                columna = int(input("Ingrese la columna (1-8): ")) - 1
-                ocupar_asiento(sala, fila, columna)
+                cantidad = int(input("¿Cuántos asientos desea reservar?: "))
+                for i in range(cantidad):
+                    print(f"\n➡️ Asiento {i + 1}:")
+                    while True:
+                        try:
+                            fila = int(input("Ingrese la fila (1-5): ")) - 1
+                            columna = int(input("Ingrese la columna (1-8): ")) - 1
+                            if ocupar_asiento(sala, fila, columna):
+                                break
+                        except ValueError:
+                            print("❌ Ingrese valores válidos para fila y columna.")
+                    while True:
+                        try:
+                            precio = float(input("Ingrese el precio para este asiento (Bs): "))
+                            precios_entradas.append(precio)
+                            guardar_datos(sala, precios_entradas)
+                            break
+                        except ValueError:
+                            print("❌ Ingrese un número válido para el precio.")
             except ValueError:
-                print("❌ Por favor, ingrese números válidos.")
+                print("❌ Por favor, ingrese un número válido.")
+
         elif opcion == "2":
             libres = contar_asientos_libres(sala)
             print(f"🟩 Hay {libres} asientos libres.\n")
+
+        elif opcion == "3":
+            confirmar = input("¿Seguro que desea reiniciar la sala? (s/n): ").lower()
+            if confirmar == "s":
+                reiniciar_sala(sala)
+                precios_entradas.clear()
+                guardar_datos(sala, precios_entradas)
+                print("🔄 Sala reiniciada correctamente.\n")
+
         elif opcion == "0":
-            ocupados = contar_asientos_ocupados(sala)
-            total = ocupados * PRECIO_ENTRADA
-            print(f"🎟️ Entradas reservadas: {ocupados}")
-            print(f"💰 Total a pagar: {total} Bs")
-            print("👋 ¡Gracias por usar el sistema de cine!")
+            total = sum(precios_entradas)
+            print(f"🎟️ Entradas reservadas: {len(precios_entradas)}")
+            print(f"💰 Total a pagar: {total:.2f} Bs")
+            input("Presione ENTER para salir...")
             break
+
         else:
             print("❌ Opción no válida. Intente otra vez.")
 
-
-main()
+# Ejecutar programa
+if __name__ == "__main__":
+    main()
